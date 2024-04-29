@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import ToggleButton from "./Toggle";
 
 export function Navbar() {
   const [dark , setDark] = useState(false);
@@ -14,7 +15,8 @@ export function Navbar() {
         <Link to="/about" className="font-bold text-xl mx-2">About</Link>
       </div>
       {/* <div className=" flex items-center bg-indigo-300 p-2 rounded-md">
-        <button onClick={handleDark}>Enable dark mode</button>
+        <ToggleButton />
+        {/* <span onClick={handleDark}>Dark mode:  </span> }
       </div> */}
     </div>
   );
